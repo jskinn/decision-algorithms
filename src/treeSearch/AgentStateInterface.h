@@ -9,6 +9,7 @@
 #define TREESEARCH_AGENTSTATEINTERFACE_H_
 
 #include <list>
+#include "ActionInterface.h"
 
 namespace treeSearch {
 

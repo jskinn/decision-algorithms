@@ -27,7 +27,8 @@ float doSearch(
 
 	WorldStateInterface::SnapshotInterface* snapshot = progressiveWorldState->takeSnapshot();
 
-	AgentStateInterface* actingAgent = agentQueue.pop();
+	AgentStateInterface* actingAgent = agentQueue.top();
+	agentQueue.pop();
 	std::list<ActionInterface*> actions = actingAgent->getPossibleActions();
 	float best = 0, score = 0;
 
